@@ -47,7 +47,7 @@ class GeneticAlgorithm:
             self.latest_fitness = self._calculate_fitness(self.latest_prediction) if self.latest_prediction is not None else 0
             if self.latest_prediction is not None:
                 print(f'Generation {generation + 1}\nCurrent prediction: {self.latest_prediction}\nCurrent fitness: {self.latest_fitness}\n')
-                logger.log(generation, self.population_size, self.max_generations, self.mutation_rate, self.fitness_function, self.latest_fitness)
+                # logger.log(generation, self.population_size, self.max_generations, self.mutation_rate, self.fitness_function, self.latest_fitness)
 
             # Update best prediction
             self.latest_prediction = self.population[np.argmax(self.fitness_scores)]
