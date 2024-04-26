@@ -6,7 +6,7 @@ from plotter import ImagePlotter
 
 def main():
     # Load image
-    img_name = 'flower'
+    img_name = 'correct'
     with open(f'images/{img_name}.img', 'r') as f:
         image = f.readlines()
         f.close()
